@@ -1,7 +1,8 @@
+#Find the smallest positive integer not present in the list
 def solution(A):
     flag = False
     B = []
-    for i in range(0,len(A)):
+    for i in range(0,len(A)): #To get list of all Positive numbers > 0
         if A[i] > 0:
             B.append(A[i])
             flag = True
