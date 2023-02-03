@@ -1,3 +1,5 @@
+#Code to find longest sequence of zeros in binary representation of an integer.
+#Eg: 1041 = 10000010001 O/P : 5
 def solution(N):
     binary = bin(N).replace("0b", "")
     max_count = []
