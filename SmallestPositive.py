@@ -1,5 +1,5 @@
 #Find the smallest positive integer not present in the list
-#Eg: Givem : A = [11, 2, 6, 4, 3, 1] O/P: 5
+#Eg: Given : A = [11, 2, 6, 4, 3, 1] O/P: 5
 #Given : A = [-1,-2,-3] O/P: 1
 def solution(A):
     flag = False
