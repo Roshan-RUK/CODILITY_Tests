@@ -1,4 +1,5 @@
 #Max rotation of table to find dish for individual
+#Eg A = [1, 3, 5, 2, 8, 7, 4], B = [7, 1, 9, 8, 5, 7, 4] O/P = 2
 def solution(A, B):
     rotation = 0
     max_counter = 0
@@ -26,6 +27,6 @@ def solution(A, B):
 #A = [1, 1, 1, 1]
 #B = [1, 2, 3, 4]
 A = [1, 3, 5, 2, 8, 7, 4]
-B = [7, 1, 9, 8, 5, 4, 7]
+B = [7, 1, 9, 8, 5, 7, 4]
 rotate= solution(A, B)
 print(rotate)
