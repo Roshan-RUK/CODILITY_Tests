@@ -1,3 +1,13 @@
+#Delete vowels in a given string
+str1 = "String has vowels"
+result = ""
+for i in str1:
+    i = i.lower()
+    if i == 'a' or i == 'e' or i == 'i' or i == 'o' or i == 'u':
+        i = ''
+    result += i
+print("String with deleted vowels "+result)
+
 #Convert a given string into upper case
 str1 = "UppErCaSe"
 result = ""
