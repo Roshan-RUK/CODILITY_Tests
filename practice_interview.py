@@ -1,3 +1,17 @@
+#Print all non repeating characters in a string
+str1 = "aabbcdeeffgh"
+result = ""
+for i in str1:
+    count = 0
+    for j in str1:
+        if i == j:
+            count = count + 1
+    if count == 1:
+        result += i
+
+print("ALl the unique character in a string "+result)
+
+
 #Remove repeated character from a string
 str1 = "aabbcccdefggggg"
 str2 = ""
@@ -8,9 +22,6 @@ for i in str1:
         str2 = str2 + i
 
 print("String without repeated characters "+str2)
-
-
-
 
 #Highest frequency character in a string
 str1 = "aabbcccdefggggg"
