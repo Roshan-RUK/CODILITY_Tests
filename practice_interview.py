@@ -1,3 +1,28 @@
+#Remove repeated character from a string
+str1 = "aabbcccdefggggg"
+str2 = ""
+count = 0
+result = ""
+for i in str1:
+    if i not in str2:
+        str2 = str2 + i
+
+print("String without repeated characters "+str2)
+
+
+
+
+#Highest frequency character in a string
+str1 = "aabbcccdefggggg"
+char_freq = {}
+
+for i in str1:
+    if i in char_freq:
+        char_freq[i] = char_freq[i] +1
+    else:
+        char_freq[i] = 1
+print(max(char_freq, key = char_freq.get))
+
 #Delete vowels in a given string
 str1 = "String has vowels"
 result = ""
