@@ -1,5 +1,4 @@
 #Return greatest of 3 numbers using lambda
-
 a,b,c = 32, 41, 11
 greatest = lambda a, b, c:a if(a > b and a > c) else (b if(b > c) else c)
 print(greatest(a,b,c))
@@ -22,7 +21,6 @@ elif fiboNumber > 1:
         n1 = n2
         n2 = nth
         count += 1
-
 
 #to reverse an integer
 value = 5647
