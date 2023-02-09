@@ -1,3 +1,12 @@
+#Convert a given string into upper case
+str1 = "UppErCaSe"
+result = ""
+for i in str1:
+    if i.islower():
+        i = i.upper()
+    result += i
+print("Upper case string is "+result)
+
 #Program to replace string space with given character
 str1 = "ques ol"
 ch = 's'
