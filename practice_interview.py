@@ -1,3 +1,98 @@
+#To print duplicates
+l1= [23,65,23,6,90,2,6,8]
+l2 = []
+l3=[]
+for i in l1:
+    if i not in l2:
+        l2.append(i)
+    else:
+        l3.append(i)
+
+print(l3)
+
+#to remove empty tuple
+l1= [23,65,(),90,2,6,(),9]
+for i in l1:
+    if i == ():
+        l1.remove(i)
+print(l1)
+#print odd numbers in list
+l1= [23,65,19,90,2,6,8]
+for i in l1:
+    if i%2 != 0:
+        print(i, end="\n")
+
+#print even numbers in list
+l1= [23,65,19,90,2,6,8]
+for i in l1:
+    if i%2 == 0:
+        print(i, end="\n")
+
+#smallest number in a list
+l1=[3,-4,1,5,7,0]
+l1 = sorted(l1)
+small = l1[0]
+for i in l1:
+    if i < small:
+        small = i
+print(small)
+
+
+#Sum all elements in the list
+l1 = [1,2,3,4,5,6]
+sum = 0
+for i in l1:
+    sum = sum + i
+print(sum)
+
+
+#Reverse a list
+l1 = [1,2,3,4,5,6]
+print(l1[::-1])
+size = len(l1)
+l2 =[]
+for i in range(1, len(l1)+1):
+    l2.append(l1[size-1])
+    size = size -1
+print(l2)
+
+
+
+#Interchange fisrt and last element in a list
+b = [1,2,3,4,5,6]
+size = len(b)
+temp = b[0]
+b[0] = b[size-1]
+b[size-1] = temp
+print(b)
+
+#Program to swap 2 element
+l1= [23,65,19,90]
+l2=[1,2,3,4,5]
+pos1 =2
+pos2 = 3
+l1[pos1], l2[pos2] = l2[pos2], l1[pos1]
+print(l1, end="\n")
+print(l2)
+
+#Nested Dictionary structure
+dat = {"emp1":{"name":"Roshan","ID":"123"},
+       "emp2":{"name":"Khan","ID":"456"}}
+print(dat["emp2"]["name"])
+
+#Sort a string in ascensding and decending
+str1 = "python"
+str2 = ""
+str3 = ""
+j = 0
+for i in str1:
+    str1 = sorted(str1)
+    str2 = str2 + str1[j]
+    str3 = str1[j] + str3
+    j +=1
+print("Sorted String in ascending "+str2)
+print("Sorted String in descending "+str3)
+
 #Print all non repeating characters in a string
 str1 = "aabbcdeeffgh"
 result = ""
@@ -32,7 +127,11 @@ for i in str1:
         char_freq[i] = char_freq[i] +1
     else:
         char_freq[i] = 1
+print("this one")
+k = max(char_freq, key = char_freq.get)
+print(char_freq[k])
 print(max(char_freq, key = char_freq.get))
+
 
 #Delete vowels in a given string
 str1 = "String has vowels"
