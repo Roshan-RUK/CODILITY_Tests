@@ -7,7 +7,6 @@ for i in l1:
         l2.append(i)
     else:
         l3.append(i)
-
 print(l3)
 
 #to remove empty tuple
