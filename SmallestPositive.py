@@ -26,9 +26,9 @@ def solution(A):
         smallPos = count +1
     return smallPos
 
-A = [11, 2, 6, 4, 3, 1]
+#A = [11, 2, 6, 4, 3, 1]
 #A = [1,2,3]
-#A = [-1,-2,-3]
+A = [-1,-2,-3]
 solution(A)
 found = solution(A)
 print(found)
