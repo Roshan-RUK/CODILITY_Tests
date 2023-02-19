@@ -1,6 +1,17 @@
+#Factorial using recursion
+def facto(n):
+    if n==1:
+        return n
+    else:
+        return n*facto(n-1)
+
+n=5
+print(facto(n))
+
 #To print duplicates
-l1= [23,65,23,6,90,2,6,8]
+l1= [23,65,23,6,90,2,6,8,8]
 l2 = []
+
 l3=[]
 for i in l1:
     if i not in l2:
@@ -8,6 +19,7 @@ for i in l1:
     else:
         l3.append(i)
 print(l3)
+print(l2)
 
 #to remove empty tuple
 l1= [23,65,(),90,2,6,(),9]
