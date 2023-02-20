@@ -1,3 +1,19 @@
+#Fibonacci Series using Recursion
+def fibo(n):
+    if n <=1:
+        return n
+    else:
+        return (fibo(n-1)+fibo(n-2))
+
+n=5
+if n <= 0:
+    print("Please enter Positive value")
+else:
+    print("The fibo series is :")
+    for i in range(n):
+        print(fibo(i))
+
+
 #Factorial using recursion
 def facto(n):
     if n==1:
